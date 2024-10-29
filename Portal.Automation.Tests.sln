@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Automation.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Automation.Api", "src\Portal.Automation.Api\Portal.Automation.Api.csproj", "{32CBB6B6-7220-4E7F-A8DD-6CCD31DC3815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Automation.Web", "src\Portal.Automation.Web\Portal.Automation.Web.csproj", "{99638FD2-B5F9-438E-98BA-F3D5A207CB89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Automation.Web.Selenium1", "src\Portal.Automation.Web\Portal.Automation.Web.Selenium1.csproj", "{99638FD2-B5F9-438E-98BA-F3D5A207CB89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Automation.Web.Playwright1", "src\Portal.Automation.Web.Playwright\Portal.Automation.Web.Playwright1.csproj", "{CD95B9C2-6FCB-4691-95AC-DF9BFB63677D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Automation.Tests.E2E", "src\Portal.Automation.Tests.E2E\Portal.Automation.Tests.E2E.csproj", "{8B21F3A1-F8A2-4DA8-9947-965DF2CFF40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Automation.Web.Domain", "src\Portal.Automation.Web.Domain\Portal.Automation.Web.Domain.csproj", "{1E99472E-F073-4586-81C9-02DD3C8C1543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Automation.Web.Playwright2", "src\Portal.Automation.Web.Playwright2\Portal.Automation.Web.Playwright2.csproj", "{F8F56308-6D59-468F-9391-BB4FCF6FF4AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{99638FD2-B5F9-438E-98BA-F3D5A207CB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99638FD2-B5F9-438E-98BA-F3D5A207CB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99638FD2-B5F9-438E-98BA-F3D5A207CB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD95B9C2-6FCB-4691-95AC-DF9BFB63677D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD95B9C2-6FCB-4691-95AC-DF9BFB63677D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD95B9C2-6FCB-4691-95AC-DF9BFB63677D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD95B9C2-6FCB-4691-95AC-DF9BFB63677D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B21F3A1-F8A2-4DA8-9947-965DF2CFF40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B21F3A1-F8A2-4DA8-9947-965DF2CFF40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B21F3A1-F8A2-4DA8-9947-965DF2CFF40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B21F3A1-F8A2-4DA8-9947-965DF2CFF40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E99472E-F073-4586-81C9-02DD3C8C1543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E99472E-F073-4586-81C9-02DD3C8C1543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E99472E-F073-4586-81C9-02DD3C8C1543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E99472E-F073-4586-81C9-02DD3C8C1543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F56308-6D59-468F-9391-BB4FCF6FF4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F56308-6D59-468F-9391-BB4FCF6FF4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F56308-6D59-468F-9391-BB4FCF6FF4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F56308-6D59-468F-9391-BB4FCF6FF4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

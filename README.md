@@ -1,35 +1,33 @@
 # Introduction
 
-A repository of Portal test automation framework based on .Net 6.
-API and UI tests were written for CI-CD training purpose.
-TODO: using this project - run tests in the Docker container.
+TAF based on .NET 8.
+
+Contain examples of:
+1. E2E tests with Selenium framework;
+2. E2E tests with Playwright;
+3. Basic API tests;
+
+Main purpose - provide examples of using both popular E2E framewoks for browser testing: Selenium and Playwright.
 
 # Getting Started
 
 ## Prerequisites
 
-Install [.Net 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+Install [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-## Project configuration
+## How to run tests with Playwright?
 
-1. General project configuration stored in `appsettings.json` file.
-2. AzureSettings secrets for local run stored with manage secrets (need to create local file)
+1. In the project of tests there should be installed package - 'Microsoft.Playwright.NUnit'
+2. Build solution
+3. In the 'bin/Debug/net8.0' folder of the tests project (where are your playwrite tests) - run playwright.ps1: 
 
-## Build
+`
+pwsh bin/Debug/net8.0/playwright.ps1 install
+`
 
-1. Install [.Net 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-   - Make sure you added `dotnet` folder to the PATH (usually path is `C:\Program Files\dotnet`)
-2. Install **NuGet Command Line Tool** from [NuGet CLI](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe)
-   - Make sure you added nuget.exe folder to the PATH
+- this command will install all 4 browsers to the machune with latest version for your package of Playwright. You can customize it to install
+only needed browsers;
+- full guide how to start with [Playwright](https://playwright.dev/dotnet/docs/intro);
 
-## Test
-
-1. Console
-   - Install [NUnit-Console](https://nunit.org/docs/2.4/nunit-console.html)
-   - Run `nunit3-console Tests.dll`
-     - with [filters](https://github.com/nunit/docs/wiki/Console-Command-Line) `dotnet test --filter "TestCategory=API"` for run only API tests
-     - with [filters](https://github.com/nunit/docs/wiki/Console-Command-Line) `dotnet test --filter "TestCategory=UI"` for run only UI tests
-     - [Other tags](https://github.com/nunit/docs/wiki/Test-Selection-Language)
-2. Visual Studio 2019/2022
-   - Setup [NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter) extension
-   - Run tests using `Test > Windows > Test Explorer` window.
+4. Note, when you update the version of Playwright in your solution - you need pass steps 1-3 again. So it generates new pwsh script and
+install ned versions of browsers correlated with new version of Playwright package.
